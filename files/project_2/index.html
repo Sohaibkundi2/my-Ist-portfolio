@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form_data">
+            <h1>Job Application <small>(For Develpor Only)</small></h1>
+            <form method="get" action="">
+                <div class="form_container">
+                    <div class="f_data">
+                        <label for="i_name">First Name:</label>
+                        <input type="text" name="Ist_Name" id="i_name">
+                    </div>
+
+                    <div class="f_data">
+                        <label for="l_name">Last Name:</label>
+                        <input type="text" name="Last_Name" id="l_name">
+                    </div>
+
+                    <div class="f_data">
+                        <label for="mail">Your E-mail:</label>
+                        <input type="email" name="email" id="mail">
+                    </div>
+
+                    <div class="f_data">
+                        <label for="job_selector">Job:</label>
+                        <select name="role" id="job_selector">
+                            <option value="">Select Your Job:</option>
+                            <option value="Frontend">Frontend Web Develpor</option>
+                            <option value="Backend">Backend Web Develpor</option>
+                            <option value="full">Full Stack Web Develpor</option>
+                            <option value="ui_ux">UI_UX Designer</option>
+                        </select>
+                    </div>
+
+                    <div class="t_a_data">
+                        <label for="address">Address:</label>
+                        <textarea name="address" id="address" cols="50" rows="4"></textarea>
+                    </div>
+
+                    <div class="f_data">
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+
+                    <div class="f_data">
+                        <label for="pincode">pincode:</label>
+                        <input type="number" name="city" id="pincode">
+                    </div>
+
+                    <div class="f_data">
+                        <label for="date">Date:</label>
+                        <input type="date" value="2024-06-10" name="date" id="date">
+                    </div>
+
+                    <div class="f_data">
+                        <label for="cv">Upload your CV:</label>
+                        <input type="file" name="cv" id="cv">
+                    </div>
+                </div>
+            </form>
+            <div class="btn_div">
+                <button class="btn">Apply Now</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

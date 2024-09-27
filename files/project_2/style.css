@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.form_data {
+    max-width: 600px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(1, 1, 1, .2);
+}
+
+.form_container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.f_data {
+    display: flex;
+    flex-direction: column;
+}
+
+.t_a_data {
+    grid-column: 1 / span 2;
+}
+
+.t_a_data textarea {
+    width: 100%;
+}
+
+@media (max-width:532px) {
+    .t_a_data {
+        grid-column: 1 / span 1;
+    }
+}
+
+input,
+textarea,
+select {
+    padding: 5px 10px;
+    border: 1px #b8b8b8 solid;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline-color: darkred;
+}
+
+.btn {
+    padding: 7px 14px;
+    border: 1px #000000 solid;
+    border-radius: 8px;
+    margin-top: 10px;
+    color: #f1e7d3;
+    background-color: red;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s ease-in;
+}
+
+.btn:hover {
+    background-color: rgb(205, 112, 31);
+    color: #000000;
+    border: 1px solid red;
+    transition: .3s ease-out;
+    cursor: pointer;
+}
+
+.btn_div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+label {
+    font-size: 15px;
+}
